@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Lobster Two", cursive;
+  /* outline: 1px solid rgb(29, 11, 11); */
+}
+
+.game-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  /* make background liner gredient */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  font-size: 10px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(30, 168, 157, 0.671);
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 100px 5px rgba(74, 177, 125, 0.226);
+}
+
+.window {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.win {
+  position: absolute;
+  top: 0;
+  color: red;
+  font-size: 50px;
+  margin-top: 100px;
+}
+.history {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  background: linear-gradient(to right, #f6f6f6, #fff);
+  border-radius: 5px;
+  padding: 10px;
+  width: 7%;
+  height: 50%;
+  overflow-y: scroll;
+  margin-left: 500px;
+}
+.history button {
+  background: linear-gradient(to right, #00bcd4, #00e5ff);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 5px;
+  width: 100px;
+  height: 50px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row button:nth-child(even) {
+  /* make a cool gradient cell */
+  background: linear-gradient(to right, #00bcd4, #00e5ff);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+}
+.row button:nth-child(odd) {
+  /* make another cool gradient cell */
+  background: linear-gradient(to right, #7ce095, #fff);
+  border: none;
+  border-radius: 3px;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.next {
+  font-size: 50px;
+}
